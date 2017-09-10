@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- selected state -->
+    <item android:drawable="@drawable/sight"
+        android:state_selected="true"
+        android:state_pressed="false" />
+    <!-- unselected state (default) -->
+    <item>
+    <bitmap
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@drawable/sight"
+        android:tint="@android:color/darker_gray"/>
+    </item>
+</selector>
