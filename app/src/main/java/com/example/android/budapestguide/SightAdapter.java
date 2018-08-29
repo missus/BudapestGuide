@@ -1,3 +1,8 @@
+/*
+ * Created by Karolin Fornet.
+ * Copyright (c) 2017.  All rights reserved.
+ */
+
 package com.example.android.budapestguide;
 
 import android.support.annotation.NonNull;
@@ -11,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
 
 public class SightAdapter extends ArrayAdapter<Sight> {
 
@@ -33,11 +37,11 @@ public class SightAdapter extends ArrayAdapter<Sight> {
 
         Sight currentSight = getItem(position);
 
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.name);
+        TextView nameTextView = listItemView.findViewById(R.id.name);
         nameTextView.setText(currentSight.getName());
         nameTextView.setTextColor(ContextCompat.getColor(getContext(), Color));
 
-        TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_name);
+        TextView englishTextView = listItemView.findViewById(R.id.english_name);
         if (currentSight.hasEnglishName()) {
             englishTextView.setText(currentSight.getEnglishName());
             englishTextView.setVisibility(View.VISIBLE);
@@ -45,10 +49,10 @@ public class SightAdapter extends ArrayAdapter<Sight> {
             englishTextView.setVisibility(View.GONE);
         }
 
-        TextView typeTextView = (TextView) listItemView.findViewById(R.id.type);
+        TextView typeTextView = listItemView.findViewById(R.id.type);
         typeTextView.setText(currentSight.getType());
 
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView iconView = listItemView.findViewById(R.id.image);
         if (currentSight.hasImage()) {
             iconView.setImageResource(currentSight.getImageId());
             iconView.setVisibility(View.VISIBLE);

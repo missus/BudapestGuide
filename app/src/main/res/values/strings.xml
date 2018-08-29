@@ -5,7 +5,7 @@
     <string name="category_museum">Museums</string>
     <string name="category_nature">Nature</string>
     <string name="category_restaurant">Restaurants</string>
-    <string name="empty_url">no</string>
+    <string name="google_search">"Unable to search, Google Search is disabled!</string>
     <string name="sight_0">Halászbástya</string>
     <string name="sight_1">Budavári Palota</string>
     <string name="sight_2">Országház</string>
